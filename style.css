@@ -2,17 +2,12 @@ body, html
 {
   margin:0;
   padding:0;
+}
 
 .container
 {
   display: grid;
-  grid-template-columns: 1fr 5fr; 
-}
-
-.main
-{
-  background: green;
-  height: 100vh;
+  grid-template-columns: 1fr 4fr; 
 }
 .sidebar 
 {
@@ -31,3 +26,90 @@ body, html
   font-weight: bold;
   padding: 10px;
 }
+
+.main
+{
+  height: 100vh;
+  padding-top: 30px;
+
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  
+}
+
+.header
+{
+  display: grid;
+  grid-template-columns: 8fr 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 30px;
+
+}
+.search-bar
+{
+  box-sizing: border-box;
+}
+.search-bar input
+{
+  background-color: gray;
+  border-radius: 20px;
+  width: 40vw;
+  height: 50%;
+}
+.greeting
+{
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 10% 20%; /* 10px 20px */
+
+  padding-bottom: 5px;
+}
+.greeting img
+{
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.greeting p:not(#name) 
+{
+  font-size: 10px;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.greeting #name
+{
+  font-size: 20px; /* */
+  font-weight: bold;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.nav-buttons button
+{
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 35px;
+  width: 80px;
+
+}
+.nav-buttons
+{
+  grid-column: 2 / 4;
+
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: stretch;
+}
+
+
+.content
+{
+  background: gray;
+}
+
+
