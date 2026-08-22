@@ -1,3 +1,7 @@
+:root
+{
+  font-family: 'Roboto';
+}
 body, html 
 {
   margin:0;
@@ -122,17 +126,18 @@ body, html
 
 .project-cards
 {
-  margin-left: 30px;
+  margin-left: 20px;
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(0, 200px));
+
 }
 
 .project-cards > div /* All cards */
 {
   background: white;
-  border-radius: 2em;
+  border-radius: 10px;
 
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
@@ -140,8 +145,8 @@ body, html
 
 .project-cards > div * 
 {
-  margin-left: 1em;
-  margin-right: 2em;
+  margin-left: 2em;
+  margin-right: 1em;
 }
 .project-cards h3
 {
@@ -167,6 +172,7 @@ body, html
 }
 .icons
 {
+  margin-botton: 10px;
   display: flex;
   justify-content: end;
 }
