@@ -35,7 +35,7 @@ body, html
 .main
 {
 /*  height: calc(100vh - 30px);*/
-  padding-top: 30px;
+  margin-top: 2em;
 
   display: grid;
   grid-template-rows: 1fr 7fr;
@@ -115,18 +115,27 @@ body, html
   justify-self: stretch;
 }
 
-
 .content
 {
   background: gray;
 
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+  grid-template-columns: 3fr 1fr;
+}
+
+.content > div
+{
+  margin-top: 1em;
+}
+.projects > *
+{
+  margin-left: 20px;
 }
 
 .project-cards
 {
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(2, 1fr);
@@ -145,17 +154,20 @@ body, html
 
 .project-cards > div * 
 {
-  margin-left: 2em;
-  margin-right: 1em;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .project-cards h3
 {
+  margin-top: 1em;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
 .project-cards p
 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 0.9em;
 
   grid-column: 1 / 2;
@@ -172,7 +184,51 @@ body, html
 }
 .icons
 {
-  margin-botton: 10px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: end;
 }
+
+.announcements
+{
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  margin-right: 2em;
+}
+
+.announcement-cards
+{
+  background: white;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.announcement-cards > div
+{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.announcement-cards h4 
+{
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.announcement-cards p
+{
+  font-size: 0.8em;
+  color: gray;
+}
+
+hr
+{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 2em 0;
+  padding: 0;
+}
+
