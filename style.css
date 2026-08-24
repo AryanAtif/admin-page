@@ -104,6 +104,9 @@ body, html
   height: 35px;
   width: 80px;
 
+  align-self: center;
+  justify-self: center;
+
 }
 .nav-buttons
 {
