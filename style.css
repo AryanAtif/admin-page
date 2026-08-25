@@ -17,7 +17,7 @@ body, html
 .sidebar 
 {
   color: white;
-  background: blue;
+  background: #1992d4;
   height: 100vh;
   font-size: 20px;
   overflow: auto;
@@ -58,8 +58,8 @@ body, html
   align-items: center;
 
   display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 150%;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
 }
 .search-bar *
 {
@@ -68,18 +68,17 @@ body, html
 }
 .search-bar img
 {
-  justify-self: start;
-
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
 .search-bar input
 {
-  background-color: gray;
+  background-color: #e2e8f0;
+  border: none;
   border-radius: 20px;
   width: 40vw;
-  height: 60%;
+  height: 3vh;
 
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -152,7 +151,7 @@ body, html
 
 .nav-buttons button
 {
-  background-color: blue;
+  background-color: #1992d4;
   color: white;
   border: none;
   border-radius: 20px;
@@ -174,7 +173,7 @@ body, html
 
 .content
 {
-  background: gray;
+  background: #e2e8f0;
   height: 100%;
   overflow: auto;
 
@@ -345,22 +344,6 @@ body, html
   font-size: 0.8em;
   color: gray;
 }
-/*
-.trending-card > div > h4
-{
-  font-size: 0.8em;
-  font-weight: bold;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-.trending-card > div > p
-{
-  font-size: 0.8em;
-  color: gray;
-
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}*/
 
 hr
 {
